@@ -5,9 +5,11 @@ const fs = require("fs")
 const { Player } = require("discord-player")
 const { token } = require("./config.json")
 
+
+
 const LOAD_SLASH = process.argv[2] == "load"
 
-const CLIENT_ID = "721287837898768456"
+const CLIENT_ID = "place your client id"
 
 const client = new Discord.Client({
     intents: [
@@ -52,8 +54,6 @@ if (LOAD_SLASH) {
 else {
     client.on("ready", () => {
         console.log(`Logged in as ${client.user.tag}`)
-        client.user.setStatus('dnd')
-        client.user.setActivity("หี", { type: "WATCHING" })
     })
     client.on("interactionCreate", (interaction) => {
         async function handleCommand() {
