@@ -29,9 +29,9 @@ client.player = new Player(client, {
 
 let commands = []
 
-const slashFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"))
+const slashFiles = fs.readdirSync("./command").filter(file => file.endsWith(".js"))
 for (const file of slashFiles){
-    const slashcmd = require(`./commands/${file}`)
+    const slashcmd = require(`./command/${file}`)
     client.slashcommands.set(slashcmd.data.name, slashcmd)
     if (LOAD_SLASH) commands.push(slashcmd.data.toJSON())
 }
