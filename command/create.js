@@ -1,6 +1,5 @@
 const { SlashCommandBuilder } = require("@discordjs/builders")
-const { MessageEmbed } = require("discord.js")
-const { QueryType } = require("discord-player")
+//create voice channel ใช้ไม่ได้น่ะถ้าอยากใช้ก็เอาไปแก้เอง
 
 module.exports = {
 	data: new SlashCommandBuilder()
