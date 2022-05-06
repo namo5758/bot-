@@ -2,6 +2,8 @@ REQUIREMENT
 
 https://nodejs.org/en/
 
+https://ffmpeg.org
+
 npm install discord.js
 
 
