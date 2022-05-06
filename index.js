@@ -1,3 +1,4 @@
+//slash command by 3chospirits
 const Discord = require("discord.js")
 const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
