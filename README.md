@@ -3,8 +3,14 @@ REQUIREMENT
 https://nodejs.org/en/
 
 npm install discord.js
+
+
 npm install @discordjs/builders
+
+
 npm install @discordjs/rest
+
+
 npm install discord-api-types
 npm install discord-player
 
